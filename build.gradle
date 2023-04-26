@@ -38,7 +38,7 @@ task fatJar(type: Jar) {
 dependencies {
     compile 'com.google.code.gson:gson:2.8.2'
     compile 'commons-io:commons-io:2.4'
-    compile 'org.apache.httpcomponents:httpclient:4.5.1'
+    compile 'org.apache.httpcomponents:httpclient:5.2.1'
 }
 
 repositories {
