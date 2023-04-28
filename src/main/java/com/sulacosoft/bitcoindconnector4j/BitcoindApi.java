@@ -65,7 +65,7 @@ public interface BitcoindApi {
 
 	String getbestblockhash();
 
-	Block getblock(String hash);
+	Block getblock(String hash, Integer verbosity);
 
 	Double getdifficulty();
 

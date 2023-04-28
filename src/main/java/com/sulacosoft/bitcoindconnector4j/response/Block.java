@@ -36,7 +36,7 @@ public class Block {
 	private String previousblockhash;
 	private long size;
 	private long time;
-	private List<String> tx;
+	private List<RawTransaction> tx;
 	private long version;
 
 	public String getBits() {
@@ -135,11 +135,11 @@ public class Block {
 		this.time = time;
 	}
 
-	public List<String> getTx() {
+	public List<RawTransaction> getTx() {
 		return tx;
 	}
 
-	public void setTx(List<String> tx) {
+	public void setTx(List<RawTransaction> tx) {
 		this.tx = tx;
 	}
 
