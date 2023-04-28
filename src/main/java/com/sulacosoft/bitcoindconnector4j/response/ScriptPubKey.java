@@ -27,7 +27,7 @@ public class ScriptPubKey {
 	private String hex;
 	private int reqSigs;
 	private String type;
-	private List<String> addresses;
+	private String address;
 
 	public String getAsm() {
 		return asm;
@@ -61,18 +61,18 @@ public class ScriptPubKey {
 		this.type = type;
 	}
 
-	public List<String> getAddresses() {
-		return addresses;
+	public String getAddress() {
+		return address;
 	}
 
-	public void setAddresses(List<String> addresses) {
-		this.addresses = addresses;
+	public void setAddress(String address) {
+		this.addresses = address;
 	}
 
 	@Override
 	public String toString() {
 		return "ScriptPubKey [asm=" + asm + ", hex=" + hex + ", reqSigs=" + reqSigs + ", type=" + type
-				+ ", addresses=" + addresses + "]";
+				+ ", address=" + address + "]";
 	}
 
 }
